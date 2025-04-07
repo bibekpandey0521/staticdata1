@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Sign Up Form</h1>
+	<hr>
+	
+	<form action ="/signup" method="post">
+		FirstName <input type="text" name="fname"/><br><br>
+		Last Name <input type ="text" name="lname"/><br><br>
+		UserName <input type="text" name="username"/><br><br>
+		Password <input type="password" name="password"/><br><br>
+		
+		Gender <input type="radio" name="gender" value="male"/> Male
+				<input type="radio" name="gender" value="female"/> Female
+				
+				<br><br>
+		City <select name="city">
+				<option value="">Select</option>	
+				<option value="bkt">Bhaktapur</option>
+				<option value="ktm">ktm</option>
+				<option value="pkr">Pokhara</option>
+				<option value="btwl">Butwal</option>
+			</select>
+			<br><br>
+		Projects <input type="checkbox" name="projects" value="project-1">Project_1	
+				<input type="checkbox" name="projects" value="project-2">Project_2
+				<input type="checkbox" name="projects" value="project-3">Project_3
+				<input type="checkbox" name="projects" value="project-4">Project_4				
+		<br>	
+		<input type ="submit" value="Signup">
+	</form>
+</body>
+</html>

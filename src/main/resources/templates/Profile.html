@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>User Details</h1>
+	<hr>
+	
+	<h2>User FirstName : [[${user.fname}]]</h2>
+	<h2>Last Name : [[${user.lname }]]</h2>
+	<h2>UserName :[[${user.username}]]</h2>
+	<h2>Password :[[${user.password}]]</h2>
+	<h2>Gender:[[${gender}]]</h2>
+	<h2>City: [[${city}]]</h2>
+	<h2>Projects : [[${projects}]]</h2>
+	
+	<table width="100%">
+		<thead>
+			<tr bgcolor="yellow">
+				<th>FirstName</th>
+				<th>LastName</th>
+				<th>UserName</th>
+				<th>Password</th>
+			</tr>	
+				<tr th:each="u : ${ulist}" bgColor="skyblue">
+				<td>[[${u.fname}]]</td>
+				<td>[[${u.lname}]]</td>
+				<td>[[${u.username}]]</td>
+				<td>[[${u.password}]]</td>
+			</tr>
+			
+		</thead>
+		<tbody>
+		
+		</tbody>
+	</table>
+</body>
+</html>
